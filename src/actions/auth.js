@@ -11,6 +11,7 @@ import AuthService from "../services/auth.service";
 
 export const register = (username, email, password) => (dispatch) => {
   console.log("auth register called");
+  console.log("auth register called 16");
   return AuthService.register(username, email, password).then(
     (response) => {
       dispatch({
