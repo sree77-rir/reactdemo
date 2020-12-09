@@ -10,6 +10,7 @@ import {
 import AuthService from "../services/auth.service";
 
 export const register = (username, email, password) => (dispatch) => {
+  console.log("auth register called");
   return AuthService.register(username, email, password).then(
     (response) => {
       dispatch({
